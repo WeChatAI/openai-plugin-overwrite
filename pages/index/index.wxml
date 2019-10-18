@@ -1,13 +1,10 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<view class="container" >
+  <view class='nav-wrap' style='width: 100vw;height: {{statusBarHeight}}px;'>
+    <view class="" style="height: {{status}}px"></view>
+    <view class='nav-title' style='width: 100vw; text-align: center; line-height: {{navHeight}}px'>示例小程序</view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class="content" style="height: calc(100vh - {{statusBarHeight}}px)">
+    <view class="originalPlugin" bindtap="goOriginalPlugin">原始插件</view>
+    <view class="rewriteComponent" bindtap="goRewriteComponent">复写组件</view>
   </view>
 </view>

@@ -1,0 +1,34 @@
+<view class="container">
+  <view class='nav-wrap' style='width: 100vw; height: {{statusBarHeight}}px;'>
+    <view class="" style="height: {{status}}px"></view>
+    <view class='nav-title' style='position: relative;width: 100vw;text-align: center;height: {{navHeight}}px;line-height: {{navHeight}}px'>
+      <view bindtap="back" style="cursor: pointer;position: absolute; top:{{(navHeight - 16) /2}}px;left: 15px; width: 20px; height: 20px;" >
+        <image bindtap="back" style="cursor: pointer;position: absolute; top:0px; left: 0px; width: 9px;height: 16px;" src="https://res.wx.qq.com/mmspraiweb_node/dist/static/openaiplugin/img/arrow.png"></image>
+      </view>
+      <view class="">
+        示例
+      </view>
+    </view>
+  </view>
+  <view class="" style="height: calc(100vh - {{statusBarHeight}}px)">
+    <chat 
+      wx:if="{{!flag}}" 
+      bind:queryCallback="getQueryCallback" 
+      bind:backHome="goBackHome"
+    ></chat>
+    <chat 
+      wx:if="{{flag}}" 
+      bind:queryCallback="getQueryCallback" 
+      bind:backHome="goBackHome"
+      generic:textMessage="customTextMessage"
+      generic:weatherMessage="customWeatherMessage"
+      generic:imageMessage="costomImageMessage"
+      generic:guideCard="customGuideCard"
+      generic:queryMessage="customQuery"
+      generic:operateCard="customoperateCard"
+      generic:musicMessage="customMusicMessage"
+      generic:newsMessage="customNewsMessage"
+      generic:unsupportedMessage="customUnsupportedMessage"
+    ></chat>
+  </view>
+</view>

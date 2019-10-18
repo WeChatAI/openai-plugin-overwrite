@@ -1,0 +1,8 @@
+<view class='container'>
+  <image class="answerimage" src="https://res.wx.qq.com/mmspraiweb_node/dist/static/openaiplugin/img/answerImage.png"></image>
+  <view class="answer">
+    <view>{{weatherDis.answer}}</view>
+    <view class="hrefWord" wx:for="{{queryBMIList}}" bindtap="send" wx:key="index" data-item="{{item}}">{{item.description}}</view>
+  </view>
+  <view style='clear: both;'></view>
+</view>
