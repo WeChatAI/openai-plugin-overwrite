@@ -22,7 +22,7 @@ Page({
       }
     })
     plugin.init({
-      appid: "",
+      appid: "VEgbxLa9kYqzGOzstdeSF3xDbkS9zK",
       navHeight: this.data.statusBarHeight,
       success: () => {
         this.setData({

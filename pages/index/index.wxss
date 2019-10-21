@@ -4,13 +4,13 @@
 }
 .content {
   width: 100%;
-  padding-top: 50px;
+  padding-top: 100px;
   box-sizing: border-box;
 }
 .originalPlugin {
   text-align: center;
-  height: 100px;
-  line-height: 100px;
+  height: 60px;
+  line-height: 60px;
   width: 200px;
   margin: 0 auto;
   background: #eeeeee;
@@ -19,8 +19,8 @@
 .rewriteComponent {
   background: rgba(231,244,255,1);
   text-align: center;
-  height: 100px;
-  line-height: 100px;
+  height: 60px;
+  line-height: 60px;
   width: 200px;
   margin: 40px auto;
   border-radius: 10px;

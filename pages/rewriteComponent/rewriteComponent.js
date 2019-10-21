@@ -22,7 +22,7 @@ Page({
       }
     })
     plugin.init({
-      appid: "",
+      appid: "VEgbxLa9kYqzGOzstdeSF3xDbkS9zK",
       // textToSpeech: true,
       // guideList: [],
       // welcome: '请问需要什么帮助',
