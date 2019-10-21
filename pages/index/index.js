@@ -30,13 +30,13 @@ Page({
   },
   goOriginalPlugin:function(e) {
     wx.navigateTo({
-      url: '../chat/chat?Identification=originalPlugin'
+      url: '../originalPlugin/originalPlugin'
     })
     plugin.setGuideList(this.data.guideList)
   },
   goRewriteComponent:function(e) {
     wx.navigateTo({
-      url: '../chat/chat?Identification=rewriteComponent'
+      url: '../rewriteComponent/rewriteComponent'
     })
     plugin.setGuideList(this.data.guideList)
   }
