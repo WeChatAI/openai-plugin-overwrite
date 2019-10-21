@@ -1,3 +1,4 @@
+<!-- 自定义导航 -->
 <view class="container" wx:if="{{flag}}">
   <view class='nav-wrap' style='width: 100vw; height: {{statusBarHeight}}px;'>
     <view class="" style="height: {{status}}px"></view>
@@ -26,3 +27,22 @@
     ></chat>
   </view>
 </view>
+
+<!-- 系统导航 -->
+<!-- <view class="container" wx:if="{{flag}}">
+  <view class="" style="height: 100vh">
+    <chat 
+      bind:queryCallback="getQueryCallback" 
+      bind:backHome="goBackHome"
+      generic:textMessage="customTextMessage"
+      generic:weatherMessage="customWeatherMessage"
+      generic:imageMessage="costomImageMessage"
+      generic:guideCard="customGuideCard"
+      generic:queryMessage="customQuery"
+      generic:operateCard="customoperateCard"
+      generic:musicMessage="customMusicMessage"
+      generic:newsMessage="customNewsMessage"
+      generic:unsupportedMessage="customUnsupportedMessage"
+    ></chat>
+  </view>
+</view> -->

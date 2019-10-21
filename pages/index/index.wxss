@@ -9,8 +9,19 @@
 }
 .originalPlugin {
   text-align: center;
+  height: 100px;
+  line-height: 100px;
+  width: 200px;
+  margin: 0 auto;
+  background: #eeeeee;
+  border-radius: 10px;
 }
 .rewriteComponent {
-  margin-top: 20px;
+  background: rgba(231,244,255,1);
   text-align: center;
+  height: 100px;
+  line-height: 100px;
+  width: 200px;
+  margin: 40px auto;
+  border-radius: 10px;
 }

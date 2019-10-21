@@ -1,3 +1,4 @@
+<!-- 自定义导航 -->
 <view class="container" wx:if="{{flag}}">
   <view class='nav-wrap' style='width: 100vw; height: {{statusBarHeight}}px;'>
     <view class="" style="height: {{status}}px"></view>
@@ -17,3 +18,13 @@
     ></chat>
   </view>
 </view>
+
+<!-- 系统导航 -->
+<!-- <view class="container" wx:if="{{flag}}">
+  <view class="" style="height: 100vh">
+    <chat 
+      bind:queryCallback="getQueryCallback" 
+      bind:backHome="goBackHome"
+    ></chat>
+  </view>
+</view> -->
