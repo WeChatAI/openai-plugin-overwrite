@@ -25,7 +25,6 @@ Component({
   },
   lifetimes: {
     ready: function() {
-   
     }
   },
   methods: {
