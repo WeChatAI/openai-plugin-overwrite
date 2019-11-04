@@ -8,7 +8,7 @@
     "navigationStyle": "custom",
     "navigationBarBackgroundColor": "#ffffff",
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "Wechat",
+    "navigationBarTitleText": "",
     "backgroundColor": "#eeeeee",
     "backgroundTextStyle": "light"
   },
@@ -16,7 +16,7 @@
   "requiredBackgroundModes": ["audio"],
   "plugins": {
     "myPlugin": {
-      "version": "1.1.2",
+      "version": "1.1.4",
       "provider": "wx8c631f7e9f2465e1"
     },
     "WechatSI": {

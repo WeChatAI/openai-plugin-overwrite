@@ -3,8 +3,7 @@ Component({
   properties: {
     controlSwiper: Boolean,
     guideList: Array,
-    height: Number,
-    background: String
+    height: Number
   },
   data: {
     guideIndex: -1
