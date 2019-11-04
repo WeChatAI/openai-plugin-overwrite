@@ -25,7 +25,7 @@ Page({
       appid: "VEgbxLa9kYqzGOzstdeSF3xDbkS9zK",
       // textToSpeech: true,
       // guideList: [],
-      // welcome: '请问需要什么帮助',
+      welcome: '请问需要什么帮助',
       // background: "#eee",
       guideCardHeight: 50,
       operateCardHeight: 120,

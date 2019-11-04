@@ -23,6 +23,14 @@ Page({
     })
     plugin.init({
       appid: "VEgbxLa9kYqzGOzstdeSF3xDbkS9zK",
+      // textToSpeech: true,
+      // guideList: [],
+      welcome: '请问需要什么帮助',
+      // background: "#eee",
+      // guideCardHeight: 40,
+      // operateCardHeight: 145,
+      // history: true,
+      // historySize: 60,
       navHeight: this.data.statusBarHeight,
       success: () => {
         this.setData({

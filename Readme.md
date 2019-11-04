@@ -21,13 +21,89 @@ https://mp.weixin.qq.com/wxopen/plugindevdoc?appid=wx8c631f7e9f2465e1
 ![链接](./doc/one.jpg)
 ![链接](./doc/two.jpg)
 
+由于区分原始插件和复写插件, 所以当前页面将插件配置项在 `rewritePluginPage.js` 和 `originalPluginPage.js` 中初始化
+
+在 `rewritePluginPage`中初始化
+```js
+
+var plugin = requirePlugin("myPlugin");
+plugin.init({
+  appid: "VEgbxLa9kYqzGOzstdeSF3xDbkS9zK",
+  // textToSpeech: true,
+  // guideList: [],
+  welcome: '请问需要什么帮助',
+  // background: "#eee",
+  guideCardHeight: 50,
+  operateCardHeight: 120,
+  // history: true,
+  // historySize: 60,
+  navHeight: 88, // 自定义导航栏高度
+  success: () => {
+    this.setData({
+      flag: true
+    })
+  },
+  fail: error => {}
+});
+
+```
+
+在 `originalPluginPage`中初始化
+```js
+
+var plugin = requirePlugin("myPlugin");
+plugin.init({
+  appid: "VEgbxLa9kYqzGOzstdeSF3xDbkS9zK",
+  // textToSpeech: true,
+  // guideList: [],
+  welcome: '请问需要什么帮助',
+  // background: "#eee",
+  // guideCardHeight: 40,
+  // operateCardHeight: 145,
+  // history: true,
+  // historySize: 60,
+  navHeight: 88, // 自定义导航栏高度
+  success: () => {
+    this.setData({
+      flag: true
+    })
+  },
+  fail: error => {}
+});
+
+```
+
+如果在 `app.js` 中初始化, 需要将 `rewritePluginPage.wxml` 中 `wx:if="{{flag}}"`删除
+```js
+
+var plugin = requirePlugin("myPlugin");
+plugin.init({
+  appid: "VEgbxLa9kYqzGOzstdeSF3xDbkS9zK",
+  // textToSpeech: true,
+  // guideList: [],
+  welcome: '请问需要什么帮助',
+  // background: "#eee",
+  guideCardHeight: 50,
+  operateCardHeight: 120,
+  // history: true,
+  // historySize: 60,
+  navHeight: 88, // 自定义导航栏高度
+  success: () => {
+  },
+  fail: error => {}
+});
+
+```
+
+在 `rewritePluginPage.json` 中引入复写组件
+
 ## 1.普通文本组件复写示例
 
 ```json
 
 {
   "usingComponents": {
-    "customTextMessage": "../customTextMessage/customTextMessage"
+    "customTextMessage": "../../components/customTextMessage/customTextMessage"
   }
 }
 
@@ -39,7 +115,7 @@ https://mp.weixin.qq.com/wxopen/plugindevdoc?appid=wx8c631f7e9f2465e1
 
 {
   "usingComponents": {
-    "customWeatherMessage": "../customWeatherMessage/customWeatherMessage"
+    "customWeatherMessage": "../../components/customWeatherMessage/customWeatherMessage"
   }
 }
 
@@ -51,7 +127,7 @@ https://mp.weixin.qq.com/wxopen/plugindevdoc?appid=wx8c631f7e9f2465e1
 
 {
   "usingComponents": {
-    "customImageMessage": "../customImageMessage/customImageMessage"
+    "customImageMessage": "../../components/customImageMessage/customImageMessage"
   }
 }
 
@@ -63,7 +139,7 @@ https://mp.weixin.qq.com/wxopen/plugindevdoc?appid=wx8c631f7e9f2465e1
 
 {
   "usingComponents": {
-    "customGuideCard": "../customGuideCard/customGuideCard"
+    "customGuideCard": "../../components/customGuideCard/customGuideCard"
   }
 }
 
@@ -75,7 +151,7 @@ https://mp.weixin.qq.com/wxopen/plugindevdoc?appid=wx8c631f7e9f2465e1
 
 {
   "usingComponents": {
-    "customOperateCard": "../customOperateCard/customOperateCard"
+    "customOperateCard": "../../components/customOperateCard/customOperateCard"
   }
 }
 
@@ -87,7 +163,7 @@ https://mp.weixin.qq.com/wxopen/plugindevdoc?appid=wx8c631f7e9f2465e1
 
 {
   "usingComponents": {
-    "customQueryMessage": "../customQueryMessage/customQueryMessage"
+    "customQueryMessage": "../../components/customQueryMessage/customQueryMessage"
   }
 }
 
@@ -99,7 +175,7 @@ https://mp.weixin.qq.com/wxopen/plugindevdoc?appid=wx8c631f7e9f2465e1
 
 {
   "usingComponents": {
-    "customMusicMessage": "../customMusicMessage/customMusicMessage"
+    "customMusicMessage": "../../components/customMusicMessage/customMusicMessage"
   }
 }
 
@@ -111,7 +187,7 @@ https://mp.weixin.qq.com/wxopen/plugindevdoc?appid=wx8c631f7e9f2465e1
 
 {
   "usingComponents": {
-    "customNewsMessage": "../customNewsMessage/customNewsMessage"
+    "customNewsMessage": "../../components/customNewsMessage/customNewsMessage"
   }
 }
 
@@ -123,7 +199,7 @@ https://mp.weixin.qq.com/wxopen/plugindevdoc?appid=wx8c631f7e9f2465e1
 
 {
   "usingComponents": {
-    "customUnsupportedMessage": "../customUnsupportedMessage/customUnsupportedMessage"
+    "customUnsupportedMessage": "../../components/customUnsupportedMessage/customUnsupportedMessage"
   }
 }
 

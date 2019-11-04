@@ -1,0 +1,14 @@
+{
+  "usingComponents": {
+    "chat": "plugin://myPlugin/chat",
+    "customTextMessage": "../../components/customTextMessage/customTextMessage",
+    "customWeatherMessage": "../../components/customWeatherMessage/customWeatherMessage",
+    "customImageMessage": "../../components/customImageMessage/customImageMessage",
+    "customGuideCard": "../../components/customGuideCard/customGuideCard",
+    "customQueryMessage": "../../components/customQueryMessage/customQueryMessage",
+    "customoperateCard": "../../components/customoperateCard/customoperateCard",
+    "customMusicMessage": "../../components/customMusicMessage/customMusicMessage",
+    "customNewsMessage": "../../components/customNewsMessage/customNewsMessage",
+    "customUnsupportedMessage": "../../components/customUnsupportedMessage/customUnsupportedMessage"
+  }
+}

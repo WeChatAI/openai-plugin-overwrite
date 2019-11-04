@@ -30,13 +30,13 @@ Page({
   },
   goOriginalPlugin:function(e) {
     wx.navigateTo({
-      url: '../originalPlugin/originalPlugin'
+      url: '../originalPluginPage/originalPluginPage'
     })
     plugin.setGuideList(this.data.guideList)
   },
   goRewriteComponent:function(e) {
     wx.navigateTo({
-      url: '../rewriteComponent/rewriteComponent'
+      url: '../rewritePluginPage/rewritePluginPage'
     })
     plugin.setGuideList(this.data.guideList)
   }

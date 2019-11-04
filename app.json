@@ -1,8 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/rewriteComponent/rewriteComponent",
-    "pages/originalPlugin/originalPlugin"
+    "pages/rewritePluginPage/rewritePluginPage",
+    "pages/originalPluginPage/originalPluginPage"
   ],
   "window": {
     "navigationStyle": "custom",
