@@ -24,6 +24,7 @@
       generic:musicMessage="customMusicMessage"
       generic:newsMessage="customNewsMessage"
       generic:unsupportedMessage="customUnsupportedMessage"
+      generic:miniprogramMessage="customMiniprogramMessage"
     ></chat>
   </view>
 </view>

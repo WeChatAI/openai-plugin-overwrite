@@ -1,0 +1,15 @@
+<view class='container'>
+    <image class="answerimage" src="https://res.wx.qq.com/mmspraiweb_node/dist/static/openaiplugin/img/answerImage.png"></image>
+    <view class="content" bindtap="reserve">
+      <view class="top">
+        <view class="minipro_title">{{msg.data.title}}</view>
+      </view>
+      <view class="minipro_imgview">
+        <image  src="{{msg.data.thumb_url}}" class="minipro_image"></image>
+      </view>
+      <view class="bottom">
+        <image src="https://res.wx.qq.com/mmspraiweb_node/dist/static/huoche/image/miniprogram.png" class="mini_icon"></image>
+        小程序
+      </view>
+    </view>
+</view>

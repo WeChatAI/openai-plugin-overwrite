@@ -9,6 +9,7 @@
     "customoperateCard": "../../components/customoperateCard/customoperateCard",
     "customMusicMessage": "../../components/customMusicMessage/customMusicMessage",
     "customNewsMessage": "../../components/customNewsMessage/customNewsMessage",
-    "customUnsupportedMessage": "../../components/customUnsupportedMessage/customUnsupportedMessage"
+    "customUnsupportedMessage": "../../components/customUnsupportedMessage/customUnsupportedMessage",
+    "customMiniprogramMessage": "../../components/customMiniprogramMessage/customMiniprogramMessage"
   }
 }
