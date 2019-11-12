@@ -137,7 +137,20 @@ Component({
           return txt;
         });
       }
-
+      // 超链接逻辑处理
+      let linkArr = [],i = 0;
+      if(/<a.*href=["']http(s)?:\/\/.*["']>.*<\/a>/g.test(content)){
+        content = content.replace(/(<a.*?href=["'](https?[^"']*).*?>([^<]*?)<\/a>)/g, (txt, match1, match2, match3) => {
+          linkArr.push({
+            name: match3,
+            href: match2
+          })
+          return `<a>${match3}</a>`
+        })
+        this.setData({
+          linkArr: linkArr
+        })
+      }
       if (/<a.*>|<span.*>/.test(content)) {
         this.setData({
           isRitch: true,
@@ -158,6 +171,12 @@ Component({
       const y = Math.floor(index / row);
       const x = index - y * row;
       return -(x * width) + "px " + -(y * height) + "px";
-    }
+    },
+    tap: function (e) {
+      let url = e.currentTarget.dataset.weburl
+      wx.navigateTo({
+        url: `/pages/webviewPage/webviewPage?url=${url}`
+      })
+    },
   }
 });

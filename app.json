@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/rewritePluginPage/rewritePluginPage",
-    "pages/originalPluginPage/originalPluginPage"
+    "pages/originalPluginPage/originalPluginPage",
+    "pages/webviewPage/webviewPage"
   ],
   "window": {
     "navigationStyle": "custom",

@@ -2,7 +2,14 @@
   <view class="answer" >
     <image class="answerimage" src="https://res.wx.qq.com/mmspraiweb_node/dist/static/openaiplugin/img/answerImage.png"></image>
     <view class="leftView">
-      <rich-text wx:if="{{isRitch}}" nodes="{{answer}}" bindtap="tap"></rich-text>
+      <view wx:if="{{isRitch}}">
+        <rich-text  nodes="{{answer}}"></rich-text>
+        <view wx:if="{{linkArr.length}}" >
+          <view data-weburl="{{item.href}}" class="link" wx:for="{{linkArr}}" wx:item="item" wx:key="key" bindtap="tap">
+            {{item.name}}
+          </view>
+        </view>
+      </view>
       <text wx:else>{{msg.content}}</text>
     </view>
   </view>

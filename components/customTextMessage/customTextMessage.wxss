@@ -40,3 +40,7 @@
   vertical-align: top;
   background-size: 360px 192px;
 }
+.link{
+  font-size: 14px;
+  color: #359AE1;
+}
