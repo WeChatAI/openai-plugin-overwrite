@@ -20,7 +20,7 @@ https://mp.weixin.qq.com/wxopen/plugindevdoc?appid=wx8c631f7e9f2465e1
 
 ![链接](./doc/one.jpg)
 ![链接](./doc/two.jpg)
-![链接](./doc/three.jpg)
+![链接](./doc/three.png)
 
 由于区分原始插件和复写插件, 所以当前页面将插件配置项在 `rewritePluginPage.js` 和 `originalPluginPage.js` 中初始化
 
