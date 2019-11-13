@@ -29,17 +29,7 @@ Page({
 
   },
   onShareAppMessage: function(res){
-    let url = this.data.url
-    if (res.from === "menu") {
-        
-    }
-    return {
-      title: '文档',
-      path:
-        "/pages/blast-webView/blast-webView?url=" + url,
-      imageUrl:
-        ""
-    };
+    
   },
   onPageScroll: function(){
 
