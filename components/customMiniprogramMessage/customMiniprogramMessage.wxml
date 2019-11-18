@@ -5,7 +5,7 @@
         <view class="minipro_title">{{msg.data.title}}</view>
       </view>
       <view class="minipro_imgview">
-        <image  src="{{msg.data.thumb_url}}" class="minipro_image"></image>
+        <image  src="{{msg.data.thumb_url}}" class="minipro_image" mode="aspectFill"></image>
       </view>
       <view class="bottom">
         <image src="https://res.wx.qq.com/mmspraiweb_node/dist/static/huoche/image/miniprogram.png" class="mini_icon"></image>

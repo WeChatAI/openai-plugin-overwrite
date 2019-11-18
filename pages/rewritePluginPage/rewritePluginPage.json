@@ -10,6 +10,7 @@
     "customMusicMessage": "../../components/customMusicMessage/customMusicMessage",
     "customNewsMessage": "../../components/customNewsMessage/customNewsMessage",
     "customUnsupportedMessage": "../../components/customUnsupportedMessage/customUnsupportedMessage",
-    "customMiniprogramMessage": "../../components/customMiniprogramMessage/customMiniprogramMessage"
+    "customMiniprogramMessage": "../../components/customMiniprogramMessage/customMiniprogramMessage",
+    "customh5Message": "../../components/customh5Message/customh5Message"
   }
 }

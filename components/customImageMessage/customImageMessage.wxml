@@ -1,3 +1,4 @@
 <view class='container'>
+   <image class="answerimage" src="https://res.wx.qq.com/mmspraiweb_node/dist/static/openaiplugin/img/answerImage.png"></image>
    <image class="imgcard-img" src="{{msg.data.url}}"></image>
 </view>

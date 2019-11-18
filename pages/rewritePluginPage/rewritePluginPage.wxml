@@ -25,6 +25,7 @@
       generic:newsMessage="customNewsMessage"
       generic:unsupportedMessage="customUnsupportedMessage"
       generic:miniprogramMessage="customMiniprogramMessage"
+      generic:h5Message="customh5Message"
     ></chat>
   </view>
 </view>
