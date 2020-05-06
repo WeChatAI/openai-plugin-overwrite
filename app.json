@@ -1,29 +1,34 @@
 {
-  "pages": [
-    "pages/index/index",
-    "pages/rewritePluginPage/rewritePluginPage",
-    "pages/originalPluginPage/originalPluginPage",
-    "pages/webviewPage/webviewPage"
-  ],
-  "window": {
-    "navigationStyle": "custom",
-    "navigationBarBackgroundColor": "#ffffff",
-    "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "",
-    "backgroundColor": "#eeeeee",
-    "backgroundTextStyle": "light"
-  },
-  "sitemapLocation": "sitemap.json",
-  "requiredBackgroundModes": ["audio"],
-  "plugins": {
-    "myPlugin": {
-      "version": "1.1.12",
-      "provider": "wx8c631f7e9f2465e1"
+    "pages": [
+        "pages/index/index",
+        "pages/rewritePluginPage/rewritePluginPage",
+        "pages/originalPluginPage/originalPluginPage",
+        "pages/webviewPage/webviewPage"
+    ],
+    "window": {
+        "navigationStyle": "custom",
+        "navigationBarBackgroundColor": "#ffffff",
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "",
+        "backgroundColor": "#eeeeee",
+        "backgroundTextStyle": "light"
     },
-    "WechatSI": {
-      "version": "0.3.3",
-      "provider": "wx069ba97219f66d99"
-    }
-  },
-  "navigateToMiniProgramAppIdList": ["wx0e6ed4f51db9d078","wx28946c42f87776eb", "wx8c631f7e9f2465e1", "wx2f9b06c1de1ccfca"]
+    "sitemapLocation": "sitemap.json",
+    "requiredBackgroundModes": ["audio"],
+    "plugins": {
+        "myPlugin": {
+            "version": "1.1.15",
+            "provider": "wx8c631f7e9f2465e1"
+        },
+        "WechatSI": {
+            "version": "0.3.3",
+            "provider": "wx069ba97219f66d99"
+        }
+    },
+    "navigateToMiniProgramAppIdList": [
+        "wx0e6ed4f51db9d078",
+        "wx28946c42f87776eb",
+        "wx8c631f7e9f2465e1",
+        "wx2f9b06c1de1ccfca"
+    ]
 }
